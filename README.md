@@ -4,6 +4,8 @@ My demo web app for Apple's take-home project.
 
 You can try out the web app [🔗here](https://coffee.jinny.work).
 
+## Showcase 
+
 ## Given Task
 
 #### Description
@@ -26,14 +28,16 @@ Styled UI. Deploy on a cloud. Any other additions you think will “surprise and
 
 User functions: 
 
-- User signup, login, & password recovery. 
-- Pre-order drinks & make payments.
-- In-app map navigation to the shop.
+- User sign-up and login
+- View and pre-order drinks
+- Make secure payments
+- In-app map navigation to the shop
 
 Admin functions: 
 
-- Admin login.
-- Admin dashboard to show sales report. 
+- Admin login
+- Dashboard to show sales report
+- Content management system
 
 ## Tech Stack
 
@@ -44,5 +48,4 @@ Admin functions:
 - `Node.js` + `Express.js`
 - `MySQL` 
 - `Prisma` ORM
-
-# 
+- `Stripe` payments
