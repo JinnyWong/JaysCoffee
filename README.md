@@ -1,10 +1,10 @@
 # ☕ Jay's Coffee
 
-My demo web app for Apple's take-home project.
+My web app for Apple's take-home project.
 
-You can try out the web app [🔗here](https://coffee.jinny.work).
+You can try out the web app [🔗here](https://jayscoffee.vercel.app).
 
-## Showcase 
+## Showcase
 
 ## Given Task
 
@@ -42,10 +42,11 @@ Admin functions:
 ## Tech Stack
 
 - `Tailwind` CSS 
+- `Radix` + `Shadcn` UI
 - `React`
 - `Next.js`
-- `Clerk` authentication
-- `Node.js` + `Express.js`
+  `Clerk` authentication
 - `MySQL` 
+- `supabase` 
 - `Prisma` ORM
 - `Stripe` payments
