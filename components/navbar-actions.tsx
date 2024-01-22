@@ -24,14 +24,18 @@ const NavbarActions = () => {
   return ( 
     <div className="ml-auto flex items-center gap-x-4">
       <Button onClick={() => router.push('/cart')} className="flex items-center rounded-full bg-black px-4 py-2">
-        <ShoppingBag
-          size={20}
-          color="white"
-        />
+        Cart Items:
         <span className="ml-2 text-sm font-medium text-white">
           {cart.items.length}
         </span>
       </Button>
+      <Button onClick={() => window.location.href="https://jayscoffee-map.vercel.app"} className="flex items-center rounded-full bg-black px-4 py-2">
+        Map to Shop
+      </Button>
+      <Button onClick={() => window.location.href="https://jayscoffee-backend.vercel.app"} className="flex items-center rounded-full bg-black px-4 py-2">
+        Admin Dashboard
+      </Button>
+      
     </div>
   );
 }

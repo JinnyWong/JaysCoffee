@@ -43,13 +43,14 @@ Admin functions:
 
 - `Tailwind CSS` 
 - `Radix` + `Shadcn` UI
-- `React`
+- `TypeScript`
 - `Next.js`
 - `Cloudinary` image hosting 
 - `Clerk` authentication
 - `PostgreSQL` + `Supabase` database 
 - `Prisma` ORM
 - `Stripe` payments
+- `MappedIn Web SDK` in-mall map navigation
 - `Vercel` cloud deployment 
 
 ## License 
