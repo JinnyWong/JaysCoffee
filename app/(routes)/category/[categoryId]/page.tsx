@@ -7,7 +7,7 @@ import NoResults from '@/components/ui/no-results';
 import getProducts from "@/actions/get-products";
 import getCategory from '@/actions/get-category';
 import getSizes from '@/actions/get-sizes';
-import getColors from '@/actions/get-colors';
+import getPreferences from '@/actions/get-preferences';
 
 import Filter from './components/filter';
 import MobileFilters from './components/mobile-filters';
@@ -19,7 +19,7 @@ interface CategoryPageProps {
     categoryId: string;
   },
   searchParams: {
-    colorId: string;
+    preferencesId: string;
     sizeId: string;
   }
 }
@@ -30,11 +30,11 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
 }) => {
   const products = await getProducts({ 
     categoryId: params.categoryId,
-    colorId: searchParams.colorId,
+    preferencesId: searchParams.preferencesId,
     sizeId: searchParams.sizeId,
   });
   const sizes = await getSizes();
-  const colors = await getColors();
+  const preferences = await getPreferences();
   const category = await getCategory(params.categoryId);
 
   return (
@@ -45,7 +45,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
         />
         <div className="px-4 sm:px-6 lg:px-8 pb-24">
           <div className="lg:grid lg:grid-cols-5 lg:gap-x-8">
-            <MobileFilters sizes={sizes} colors={colors} />
+            <MobileFilters sizes={sizes} preferences={preferences} />
             <div className="hidden lg:block">
               <Filter
                 valueKey="sizeId" 
@@ -53,9 +53,9 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
                 data={sizes}
               />
               <Filter 
-                valueKey="colorId" 
-                name="Colors" 
-                data={colors}
+                valueKey="preferencesId" 
+                name="Preferences" 
+                data={preferences}
               />
             </div>
             <div className="mt-6 lg:col-span-4 lg:mt-0">
