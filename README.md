@@ -4,6 +4,9 @@ My web app for Apple's take-home project.
 
 You can try out the web app [🔗here](https://jayscoffee.vercel.app).
 
+![](./public/web-app%20screenshot.png)
+
+
 ## Given Task
 
 ### Description
@@ -34,10 +37,6 @@ Admin functions:
 - Dashboard to show sales report
 - Content management system
 - Switch between multiple stores
-
-## Showcase
-
-
 
 ## Tech Stack
 
